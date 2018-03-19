@@ -1,0 +1,104 @@
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.PomodoroList {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid #b1b1b1;
+}
+
+.PomodoroListHeader{
+  height: 60px;
+  border-bottom:1px solid #b1b1b1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 14px;
+}
+
+
+.PomodoroListHeader span:hover {
+  cursor: pointer;
+  top: 1px;
+}
+
+.PomodoroListItem {
+  height: 100px;
+  border-bottom:1px solid #b1b1b1;
+}
+
+.PomodoroListItem.Open {
+  height: 500px;
+}
+
+.PomodoroListItem .Info {
+  height: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.PomodoroListItem .Info .Item{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PomodoroListItem .Info .Item:nth-of-type(2){
+  border-right: 1px solid #b1b1b1;
+  border-left: 1px solid #b1b1b1;
+}
+
+.PomodoroListItem .Info .Hover:hover{
+  cursor: pointer;
+}
+
+.PomodoroListItem .Info .Green{
+  background-color: green;
+}
+
+.PomodoroListItem .Info .Red{
+ background-color: red; 
+}
+
+.PomodoroListItem .Info .Yellow{
+  background-color: yellow;
+}
+
+
+
+.ActivePomodoro {
+  position: absolute;
+  height: 100%;
+   width: 50%;
+   left: 50%;
+   color: #b1b1b1;
+}
+
+
+.ActiveTimer {
+  font-size: 6rem;
+  top: 45%;
+  position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.Work {
+  color: green;
+}
+
+.Break {
+  color: red;
+}
+
+.LongBreak {
+  color: red;
+}

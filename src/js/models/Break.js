@@ -1,8 +1,9 @@
 import Timer from './Timer'
 
 export default class Break extends Timer {
-  constructor() {
+  constructor(onTick) {
     // Initialize Timer with 5 minute interval
-    super(5 * 60);
+    super(30, onTick);
+    this.type = 'Break';
   }
 }
